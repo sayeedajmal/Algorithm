@@ -1,0 +1,24 @@
+.h1 {
+    color: red;
+    text-align: center;
+    font-family: 'Fira Code';
+}
+
+.Spinner {
+    border: 18px solid #03c4ff;
+    border-top: 18px solid #1c9604;
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    animation: spin 1.1s linear infinite;
+    background-color: aqua;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
