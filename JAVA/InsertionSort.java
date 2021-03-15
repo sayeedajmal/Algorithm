@@ -18,7 +18,7 @@ class InsertionSort {
         System.out.println("Enter " + n + " Elements :");
 
         /* Justifying the n number to be placed to Correct or not */
-        for (int i = 0; i < n; i++) {
+        for (int i = 1; i < n; i++) {
             array[i] = scan.nextInt();
         }
 
@@ -27,14 +27,14 @@ class InsertionSort {
 
             int key = array[i];
             int j = i - 1;
-            while (j >= 0 && array[j] > key) {
+            while (j >= 1 && array[j] > key) {
                 array[j + 1] = array[j];
                 j = j - 1;
             }
             array[j + 1] = key;
         }
         System.out.println("<==================Sorted List with InsertionSort Technique=========================>");
-        for (int i = 0; i < n; i++) {
+        for (int i = 1; i < n; i++) {
             System.out.print(array[i] + "\n");
         }
 
