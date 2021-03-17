@@ -3,9 +3,9 @@ package JAVA;
 import java.util.Scanner;
 
 public class Guessing {
+    static Scanner sc = new Scanner(System.in);
 
     public static void Guess() {
-        Scanner sc = new Scanner(System.in);
         int number = (int) ((100 * Math.random()));
         int Trail = 7;
         int i, guess;
@@ -28,7 +28,6 @@ public class Guessing {
             System.out.println("\t\t The number was: " + number);
         }
         sc.close();
-
     }
 
     public static void main(String[] args) {
