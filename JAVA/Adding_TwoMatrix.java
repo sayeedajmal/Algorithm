@@ -1,4 +1,4 @@
-package JAVA;
+
 
 import java.util.Scanner;
 
@@ -11,15 +11,15 @@ public class Adding_TwoMatrix {
 
     public static void Calculation(int Rows, int Column) {
         Scanner in = new Scanner(System.in);
-        System.out.println("Enter the number of Rows: ");
+        System.out.print("Enter the number of Rows: ");
         Rows = in.nextInt();
-        System.out.println("Enter the number of Columns: ");
+        System.out.print("Enter the number of Columns: ");
         Column = in.nextInt();
 
         int first[][] = new int[Rows][Column];
 
-        System.out.println("Enter the Elements of First matrix: ");
-        System.out.println("\n\n Enter Elements of Rows: and Column: ");
+        System.out.print("Enter the Elements of First matrix: ");
+        System.out.print("\n\n Enter Elements of Rows: and Column: ");
 
         for (int i = 0; i < Rows; i++) {
             for (int j = 0; j < Column; j++) {
@@ -28,9 +28,9 @@ public class Adding_TwoMatrix {
         }
         int second[][] = new int[Rows][Column];
 
-        System.out.println("Enter The Elements of Second Metrix: ");
-        System.out.println("\n\n Enter Elements of Rows: and Column: ");
-        
+        System.out.print("Enter The Elements of Second Metrix: ");
+        System.out.print("\n\n Enter Elements of Rows: and Column: ");
+
         for (int i = 0; i < Rows; i++) {
             for (int j = 0; j < Column; j++) {
                 second[i][j] = in.nextInt();
@@ -45,9 +45,9 @@ public class Adding_TwoMatrix {
             for (int j = 0; j < Column; j++) {
                 System.out.print("\t" + first[i][j] + " ");
                 System.out.print("\t\t" + second[i][j] + " ");
-            } /*
-               * System.out.println();
-               */
+            }
+            System.out.println();
+
         }
         in.close();
     }

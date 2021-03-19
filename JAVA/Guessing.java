@@ -1,12 +1,10 @@
-package JAVA;
-
 import java.util.Scanner;
 
 public class Guessing {
     static Scanner sc = new Scanner(System.in);
 
     public static void Guess() {
-        int number = (int) ((100 * Math.random()));
+        int number = (int) ((Math.random() * 100));
         int Trail = 7;
         int i, guess;
         System.out.println("\t\tA number is Choosen\n" + "\t\tbetween 1 to 100.\n" + "\t\tGuess the Number!\n"
