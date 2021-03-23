@@ -1,0 +1,20 @@
+1. Explain the request and response of HTTP Protocol.
+2. Explain How to Aceess XHTML element in JavaScript with Example.
+3. What is Positioning? Explain types of Positioning.
+4. Explain different XSD indicators.
+5. Explain HOw indexed and associated array with an Example.
+6. Write a PHP script to illustrate sort and sort and K sort functions.
+7. Write a PHP script to insert retrieve records from the database table.
+8. Explain the processing flow of JSP document with a neat diagram.
+9. Illustrate JSTL control action elements with an Example for Each.
+10. Discuss ablut Java Beans.
+11. Explain an five built-in String manupulation function in php.
+12. Explain pref-match() and pref-query() method used to execute SQL queries with it's syntex.
+13. Explain the use of my_query() method used to execute SQL queries with it's syntex.
+14. Explain doGET and doPOST method of HTTP servlet class.
+15. Explain the structure of DOM.
+16. Describe connecting to Mysql and Selecting a database.
+17. Illustrating with an Example for dynamic stacking of Images.
+18. Write a note on Servlet Container.
+19. Explain structure of DOM. DTD keywords of DTD.
+20 Accessing MYsql database through JDBC.
