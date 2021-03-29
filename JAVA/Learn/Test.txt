@@ -1,0 +1,22 @@
+The project consists of three classes: (main, bank, and customer)
+
+ 1 / bank
+ Consists of three variables: bank name - location - account numbers (10 accounts)
+ The following list appears
+ 1- Display information
+ Displays bank name + location
+ 2- View accounts
+ Displays all account numbers
+ 3- Entry
+ You can log in to your account
+
+ 2 / customer
+ * Select the variables you deem appropriate *
+ In the beginning, the user is required to enter the account number and password if the account number is 1234 and the password is ......
+ He is allowed to enter, and if it is wrong, he is not allowed to enter
+
+ Upon entering the following menu appears
+ 1- View the account
+ 3- Withdrawal
+ 3- Deposit
+ 4- Exit

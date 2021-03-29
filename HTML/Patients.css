@@ -1,0 +1,23 @@
+insurance,
+medProblem,
+DrugAllergie,
+Patient,
+ssn,
+age,
+room {
+  display: block;
+  color: purple;
+  text-align: center;
+  align-items: center;
+  font-family: arial;
+  font-size: 14px;
+}
+name {
+    display: block;
+  color: red;
+  font-family: monospace;
+  font-weight: bold;
+  text-align: center;
+  align-items: center;
+  font-size: 30px;
+}

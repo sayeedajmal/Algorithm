@@ -1,0 +1,36 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<?xml-stylesheet href="Patients.css" type="text/css"?>
+<patients>
+    <patient>
+        <name>
+            <fname>Sayeed</fname>
+            <lname>Ajmal</lname>
+        </name>
+        <ssn>SSN1234</ssn>
+        <age>20</age>
+        <room>123</room>
+        <insurance type="Primary">
+            <id>$123</id>
+            <gn>159</gn>
+            <address>Gulbarga</address>
+        </insurance>
+        <medProblem>High B.P</medProblem>
+        <DrugAllergie>Nill</DrugAllergie>
+    </patient>
+    <patient>
+        <name>
+            <fname>Shoaib</fname>
+            <lname>Akhtar</lname>
+        </name>
+        <ssn>SSN6789</ssn>
+        <age>28</age>
+        <room>678</room>
+        <insurance type="Secondary">
+            <id>$678</id>
+            <gn>951</gn>
+            <address>Kalaburagi</address>
+        </insurance>
+        <medProblem>High Sugar</medProblem>
+        <DrugAllergie>Nill</DrugAllergie>
+    </patient>
+</patients>
