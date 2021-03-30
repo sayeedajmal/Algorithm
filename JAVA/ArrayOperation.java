@@ -1,8 +1,13 @@
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class ArrayOperation {
     public static void main(String[] args) {
-        /* First Declare and Then Initialize arrays with their index */
+        DeclareInitiali();
+    }
+
+    /* First Declare and Then Initialize arrays with their index */
+    public static void DeclareInitiali() {
         String[] array = new String[10];
         array[0] = "Hello!";
         array[1] = " I ";
@@ -23,10 +28,10 @@ public class ArrayOperation {
         for (String Show : array1) {
             System.out.println(Show);
         }
-
-        /* Lenght of Array */
         System.out.println("Lenght of Array: " + array.length);
         System.out.println("<=======================================================================>");
+
+        /* Lenght of Array */
         /* Sum of All array Elements: */
         int numbers[] = { 13, 12, 1, 45, 32, 56, 26 };
         int sum = 0;
@@ -47,6 +52,21 @@ public class ArrayOperation {
             numbers[numbers.length - 1 - i] = temp;
         }
         System.out.println(Arrays.toString(numbers));
-
     }
+
+    public static void gettingInput() {
+        /* Getting Input in array! */
+        Scanner input = new Scanner(System.in);
+        int list[] = new int[10];
+        System.out.print("Enter Elements of Array: ");
+        for (int i = 0; i < list.length; i++) {
+            list[i] = input.nextInt();
+        }
+        /* Showing Inputs of Array List */
+        System.out.println("Here are list of Arrays");
+        System.out.println(Arrays.toString(list));
+        input.close();
+    
+    }
+
 }
