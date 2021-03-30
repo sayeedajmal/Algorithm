@@ -1,5 +1,3 @@
-package Learn;
-
 import java.util.Arrays;
 
 public class ArrayOperation {
