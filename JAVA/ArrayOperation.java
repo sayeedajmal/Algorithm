@@ -1,8 +1,12 @@
 import java.util.Arrays;
 import java.util.Scanner;
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
 
 public class ArrayOperation {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException, AWTException {
+        gettingInput();
         DeclareInitiali();
     }
 
@@ -54,11 +58,53 @@ public class ArrayOperation {
         System.out.println(Arrays.toString(numbers));
     }
 
-    public static void gettingInput() {
+    public static void gettingInput() throws InterruptedException, AWTException {
         /* Getting Input in array! */
         Scanner input = new Scanner(System.in);
         int list[] = new int[10];
         System.out.print("Enter Elements of Array: ");
+        Thread.sleep(500);
+        Robot robot = new Robot();
+        robot.keyPress(KeyEvent.VK_8);
+        robot.keyRelease(KeyEvent.VK_8);
+        robot.keyPress(KeyEvent.VK_ENTER);
+        robot.keyRelease(KeyEvent.VK_ENTER);
+        robot.keyPress(KeyEvent.VK_5);
+        robot.keyRelease(KeyEvent.VK_5);
+        robot.keyPress(KeyEvent.VK_ENTER);
+        robot.keyRelease(KeyEvent.VK_ENTER);
+        robot.keyPress(KeyEvent.VK_2);
+        robot.keyRelease(KeyEvent.VK_2);
+        robot.keyPress(KeyEvent.VK_ENTER);
+        robot.keyRelease(KeyEvent.VK_ENTER);
+        robot.keyPress(KeyEvent.VK_1);
+        robot.keyRelease(KeyEvent.VK_1);
+        robot.keyPress(KeyEvent.VK_ENTER);
+        robot.keyRelease(KeyEvent.VK_ENTER);
+        robot.keyPress(KeyEvent.VK_3);
+        robot.keyRelease(KeyEvent.VK_3);
+        robot.keyPress(KeyEvent.VK_ENTER);
+        robot.keyRelease(KeyEvent.VK_ENTER);
+        robot.keyPress(KeyEvent.VK_4);
+        robot.keyRelease(KeyEvent.VK_4);
+        robot.keyPress(KeyEvent.VK_ENTER);
+        robot.keyRelease(KeyEvent.VK_ENTER);
+        robot.keyPress(KeyEvent.VK_7);
+        robot.keyRelease(KeyEvent.VK_7);
+        robot.keyPress(KeyEvent.VK_ENTER);
+        robot.keyRelease(KeyEvent.VK_ENTER);
+        robot.keyPress(KeyEvent.VK_6);
+        robot.keyRelease(KeyEvent.VK_6);
+        robot.keyPress(KeyEvent.VK_ENTER);
+        robot.keyRelease(KeyEvent.VK_ENTER);
+        robot.keyPress(KeyEvent.VK_9);
+        robot.keyRelease(KeyEvent.VK_9);
+        robot.keyPress(KeyEvent.VK_ENTER);
+        robot.keyRelease(KeyEvent.VK_ENTER);
+        robot.keyPress(KeyEvent.VK_0);
+        robot.keyRelease(KeyEvent.VK_0);
+        robot.keyPress(KeyEvent.VK_ENTER);
+        robot.keyRelease(KeyEvent.VK_ENTER);
         for (int i = 0; i < list.length; i++) {
             list[i] = input.nextInt();
         }
@@ -66,7 +112,7 @@ public class ArrayOperation {
         System.out.println("Here are list of Arrays");
         System.out.println(Arrays.toString(list));
         input.close();
-    
+
     }
 
 }
