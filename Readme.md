@@ -7,5 +7,5 @@
 - Applying Some Great Stuff.
 Like, Algorithms and Data Structure.
 
-**_So, Practice All Algorithms & Data Structure.
-_** But, Remind All things with Practice.
+**So, Practice All Algorithms & Data Structure.
+**But, Remind All things with Practice.
