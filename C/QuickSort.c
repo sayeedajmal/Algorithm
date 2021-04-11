@@ -1,68 +1,71 @@
 #include <stdio.h>
 #include <time.h>
-#define max 20
-int partition(int a[max], int, int);
-void qsort(int a[], int low, int high)
+
+void Quick(int A[10], int, int);
+int partition(int A[10], int, int);
+void swap(int A[10], int *, int *);
+
+/* MAIN */
+int main()
 {
-    int j;
-    if (low < high)
+    int begin, clock_time, end;
+    double time_required = 1.0 * ((double)(end - begin)) / CLOCKS_PER_SEC;
+    int A[10];
+    printf("\n\t\t Sorting Using QuickSort: ");
+    printf("\nEnter Total number of  Elements: ");
+    int number;
+    scanf("%d", &number);
+    for (int i = 0; i < number; i++)
     {
-        j = partition(a, low, high);
-        qsort(a, low, j - 1);
-        qsort(a, j + 1, high);
+        printf("\nEnter the number %d: ", i + 1);
+        scanf("%d", &A[i]);
     }
-}
-int partition(int a[], int low, int high)
-{
-    int pivot, i, j, temp;
-    pivot = a[low];
-    i = low + 1;
-    j = high;
-    while (1)
+    begin = clock_time;
+    Quick(A, 0, number - 1);
+    end = clock_time;
+
+    printf("\n\nSorted Element is :: ");
+    for (int i = 0; i < number; i++)
     {
-        while (pivot > a[i] && i <= high)
+        printf("\t%d", A[i]);
+        printf("\nThe Time required is: %.2f", time_required);
+    }
+    return 0;
+}
+/* Partition */
+int partition(int A[10], int low, int high)
+{
+    int pivot = A[low], i = low, j = high;
+    while (i <= j)
+    {
+        while (A[i] <= pivot)
             i++;
-        while (pivot < a[j])
+        while (A[j] > pivot)
             j--;
         if (i < j)
-        {
-            temp = a[i];
-            a[i] = a[j];
-            a[j] = temp;
-        }
-        else
-        {
-            temp = a[j];
-            a[j] = a[low];
-            a[low] = temp;
-            return j;
-        }
+            swap(A, &i, &j);
     }
+    swap(A, &low, &j);
+    return j;
 }
-void main()
+
+/* Swap */
+void swap(int A[10], int *i, int *j)
 {
-    int a[max], i, n;
-    int clock_t, begin, end;
-    double time_required = 1.0 * ((double)(end - begin)) / CLOCKS_PER_SEC;
-    printf("Enter the value of n: ");
-    scanf("%d", &n);
-    printf("Enter the array Elements: \n");
-    for (i = 0; i < n; i++)
+    int temp;
+    temp = A[*i];
+    A[*i] = A[*j];
+    A[*j] = temp;
+}
+
+/* Quick */
+void Quick(int A[10], int low, int high)
+{
+    int m, i;
+    if (low < high)
     {
-        scanf("%d", &a[i]);
+        m = partition(A, low, high);
+        Quick(A, low, m - 1);
+        Quick(A, m + 1, high);
     }
-    printf("\n The array Elements before Sorting \n");
-    for (i = 0; i < n; i++)
-    {
-        printf("%d\t", a[i]);
-    }
-    begin = clock();
-    qsort(a, 0, n - 1);
-    end = clock();
-    printf("\n Elements of the array after sorting are: \n");
-    for (i = 0; i < n; i++)
-    {
-        printf("%d\t", a[i]);
-    }
-    printf("\nTime Taken: %2f", time_required);
 }
