@@ -4,8 +4,8 @@
 
 ## For Java
 
-* Applying Some Great Stuff.
-** Like, Algorithms and Data Structure.
+- Applying Some Great Stuff.
+  \*\* Like, Algorithms and Data Structure.
 
-***So, Practice All Algorithms & Data Structure.
-*** But, Remind All things with Practice.
+**_So, Practice All Algorithms & Data Structure.
+_** But, Remind All things with Practice.
